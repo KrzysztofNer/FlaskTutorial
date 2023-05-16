@@ -9,17 +9,8 @@ data = [{"likes": 55, "name": "tede", "views": 321}, {"likes": 864, "name": "edz
 for i in range(len(data)):
     response = requests.put(f"{BASE}video/{i}", data[i])
     print(response.json())
-# response = requests.put(BASE + "video/3", {"likes":55, "name":"50cent", "views":333})
-# print(response.json())
+
 input()
-response = requests.delete(BASE + "video/0")
-print(response)
-input()
-response = requests.delete(BASE + "video/2")
-print(response)
-input()
-response = requests.get(BASE + "video/4")
+response = requests.get(BASE + "video/46")
 print(response.json())
-input()
-response = requests.get(BASE + "video/2")
-print(response.json())
+
